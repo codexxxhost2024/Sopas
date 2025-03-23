@@ -1,0 +1,630 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  touch-action: pan-y; /* Allow vertical scrolling but prevent pinch zoom */
+  -webkit-text-size-adjust: 100%; /* Prevent text size adjustment on orientation change */
+  text-size-adjust: 100%;
+  overscroll-behavior-y: contain; /* Prevent pull-to-refresh but allow normal scrolling */
+}
+
+body {
+  font-family: var(--font-open-sans), sans-serif;
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  overscroll-behavior-y: contain;
+}
+
+/* Prevent horizontal scrolling */
+body,
+#__next,
+main {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-roboto), sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Default theme (Red) */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 0 84% 50%; /* Red color */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 0 84% 50%; /* Red color */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+/* Forest theme (Green) */
+.theme-forest {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  --primary: 142 76% 36%; /* Forest Green */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 142 76% 36%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 142 76% 36%;
+
+  --radius: 0.5rem;
+}
+
+.dark.theme-forest {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 142 76% 36%; /* Forest Green */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 142 76% 36%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 142 76% 36%;
+}
+
+/* Ocean theme (Blue) */
+.theme-ocean {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  --primary: 210 100% 50%; /* Ocean Blue */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 210 100% 50%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 210 100% 50%;
+
+  --radius: 0.5rem;
+}
+
+.dark.theme-ocean {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 210 100% 50%; /* Ocean Blue */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 210 100% 50%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 210 100% 50%;
+}
+
+/* Sunset theme (Orange) */
+.theme-sunset {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  --primary: 25 95% 53%; /* Sunset Orange */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 25 95% 53%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 25 95% 53%;
+
+  --radius: 0.5rem;
+}
+
+.dark.theme-sunset {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 25 95% 53%; /* Sunset Orange */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 25 95% 53%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 25 95% 53%;
+}
+
+/* Lavender theme (Purple) */
+.theme-lavender {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  --primary: 270 76% 60%; /* Lavender Purple */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 270 76% 60%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 270 76% 60%;
+
+  --radius: 0.5rem;
+}
+
+.dark.theme-lavender {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 270 76% 60%; /* Lavender Purple */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 270 76% 60%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 270 76% 60%;
+}
+
+/* Mint theme (Teal) */
+.theme-mint {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  --primary: 160 84% 39%; /* Mint Teal */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 160 84% 39%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 160 84% 39%;
+
+  --radius: 0.5rem;
+}
+
+.dark.theme-mint {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 160 84% 39%; /* Mint Teal */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 160 84% 39%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 160 84% 39%;
+}
+
+/* Font classes */
+.font-default {
+  font-family: var(--font-open-sans), sans-serif;
+}
+
+.font-default h1,
+.font-default h2,
+.font-default h3,
+.font-default h4,
+.font-default h5,
+.font-default h6 {
+  font-family: var(--font-roboto), sans-serif;
+}
+
+.font-forest {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+.font-forest h1,
+.font-forest h2,
+.font-forest h3,
+.font-forest h4,
+.font-forest h5,
+.font-forest h6 {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 700;
+}
+
+.font-ocean {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.font-ocean h1,
+.font-ocean h2,
+.font-ocean h3,
+.font-ocean h4,
+.font-ocean h5,
+.font-ocean h6 {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+}
+
+/* Add the new font classes */
+.font-helvetica {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.font-helvetica h1,
+.font-helvetica h2,
+.font-helvetica h3,
+.font-helvetica h4,
+.font-helvetica h5,
+.font-helvetica h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.font-lato {
+  font-family: var(--font-lato), sans-serif;
+}
+
+.font-lato h1,
+.font-lato h2,
+.font-lato h3,
+.font-lato h4,
+.font-lato h5,
+.font-lato h6 {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 700;
+}
+
+.font-sans-serif {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-sans-serif h1,
+.font-sans-serif h2,
+.font-sans-serif h3,
+.font-sans-serif h4,
+.font-sans-serif h5,
+.font-sans-serif h6 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Add these styles at the end of the file to handle sticky header */
+@layer utilities {
+  .sticky-header-padding {
+    padding-top: var(--header-height, 144px);
+  }
+
+  @media (min-width: 768px) {
+    .sticky-header-padding {
+      padding-top: var(--header-height, 128px);
+    }
+  }
+}
+
+/* Add styles for the sticky header shadow effect */
+.header-shadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile sticky header improvements */
+@media (max-width: 768px) {
+  .sticky {
+    position: sticky;
+    -webkit-position: sticky; /* For older iOS */
+  }
+
+  /* Add padding to account for the sticky header on mobile */
+  body {
+    padding-top: env(safe-area-inset-top, 0);
+  }
+
+  /* Ensure the header has proper z-index and doesn't get hidden */
+  header.sticky {
+    z-index: 50;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+}
+
+/* Update the sticky header styles to ensure proper behavior */
+/* Find the section with header-related styles and replace or add these styles: */
+
+/* Sticky header styles */
+header.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Add shadow when scrolled */
+header.is-sticky {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Ensure the header stays above other content */
+.z-50 {
+  z-index: 50 !important;
+}
+
+/* Add padding to account for the sticky header */
+main {
+  padding-top: env(safe-area-inset-top, 0);
+}
+
+/* Fix for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+  header.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+/* Ensure the header container is also sticky */
+header > div {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* Add a class to handle content spacing with sticky header */
+.has-sticky-header main {
+  padding-top: var(--safe-area-inset-top, 0);
+}
+
+/* Adjust content for mobile devices */
+@media (max-width: 768px) {
+  .has-sticky-header main {
+    padding-top: calc(var(--safe-area-inset-top, 0) + 8px);
+  }
+}
+
+/* 
+Add these styles at the end of the file */
+/* Fixed header styles */
+body {
+  /* Add padding to account for the fixed header height */
+  padding-top: 64px; /* Adjust this value based on your header height */
+}
+
+@media (min-width: 768px) {
+  body {
+    /* Adjust for the taller header on desktop (with the red top bar) */
+    padding-top: 96px; /* Adjust this value based on your header height on desktop */
+  }
+}
+
+/* Ensure the header stays above other content */
+header {
+  z-index: 50 !important;
+}
+

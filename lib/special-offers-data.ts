@@ -1,0 +1,275 @@
+import type { Product } from "@/lib/product-data"
+
+// Special offers products
+export const specialOffersProducts: Product[] = [
+  {
+    id: "offer-1",
+    name: "Premium Wireless Headphones",
+    price: 2999,
+    originalPrice: 4999,
+    image:
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "High-quality wireless headphones with noise cancellation, 30-hour battery life, and premium sound quality. Limited time offer!",
+    category: "electronics",
+    isOnSale: true,
+    featured: true,
+    stock: 15,
+    sku: "OFFER-001-HPH",
+    tags: ["headphones", "wireless", "audio"],
+    rating: 4.8,
+    reviewCount: 56,
+  },
+  {
+    id: "offer-2",
+    name: "Designer Leather Handbag",
+    price: 3499,
+    originalPrice: 5999,
+    image:
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Luxury designer handbag made from genuine leather with elegant gold hardware. Spacious interior with multiple compartments.",
+    category: "accessories",
+    isOnSale: true,
+    stock: 8,
+    sku: "OFFER-002-BAG",
+    tags: ["handbag", "leather", "designer"],
+    rating: 4.7,
+    reviewCount: 32,
+  },
+  {
+    id: "offer-3",
+    name: "Smart 4K TV - 55 inch",
+    price: 24999,
+    originalPrice: 34999,
+    image:
+      "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Ultra HD 4K smart TV with built-in streaming apps, voice control, and stunning picture quality. Special discount for a limited time!",
+    category: "electronics",
+    isOnSale: true,
+    featured: true,
+    stock: 10,
+    sku: "OFFER-003-TV",
+    tags: ["TV", "smart", "4K"],
+    rating: 4.9,
+    reviewCount: 78,
+  },
+  {
+    id: "offer-4",
+    name: "Premium Coffee Maker",
+    price: 3999,
+    originalPrice: 5999,
+    image:
+      "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Professional-grade coffee maker with programmable settings, built-in grinder, and thermal carafe. Perfect for coffee enthusiasts!",
+    category: "kitchen",
+    isOnSale: true,
+    stock: 12,
+    sku: "OFFER-004-COF",
+    tags: ["coffee", "kitchen", "appliance"],
+    rating: 4.6,
+    reviewCount: 45,
+  },
+  {
+    id: "offer-5",
+    name: "Fitness Smartwatch",
+    price: 1999,
+    originalPrice: 2999,
+    image:
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Advanced fitness tracker with heart rate monitoring, GPS, sleep tracking, and 7-day battery life. Now at a special discounted price!",
+    category: "electronics",
+    isOnSale: true,
+    stock: 20,
+    sku: "OFFER-005-WCH",
+    tags: ["smartwatch", "fitness", "wearable"],
+    rating: 4.7,
+    reviewCount: 62,
+  },
+  {
+    id: "offer-6",
+    name: "Designer Sunglasses",
+    price: 999,
+    originalPrice: 1799,
+    image:
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Premium designer sunglasses with UV protection, polarized lenses, and lightweight frame. Stylish and functional at a great price!",
+    category: "accessories",
+    isOnSale: true,
+    featured: true,
+    stock: 15,
+    sku: "OFFER-006-SUN",
+    tags: ["sunglasses", "designer", "accessories"],
+    rating: 4.5,
+    reviewCount: 38,
+  },
+  {
+    id: "offer-7",
+    name: "Robot Vacuum Cleaner",
+    price: 7999,
+    originalPrice: 12999,
+    image:
+      "https://images.unsplash.com/photo-1589454194905-0b4cc1cb7a98?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1589454194905-0b4cc1cb7a98?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1589454194905-0b4cc1cb7a98?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1589454194905-0b4cc1cb7a98?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Smart robot vacuum with mapping technology, powerful suction, and app control. Keeps your floors clean with minimal effort!",
+    category: "home-appliances",
+    isOnSale: true,
+    stock: 8,
+    sku: "OFFER-007-VAC",
+    tags: ["vacuum", "robot", "smart home"],
+    rating: 4.8,
+    reviewCount: 52,
+  },
+  {
+    id: "offer-8",
+    name: "Premium Cookware Set",
+    price: 4999,
+    originalPrice: 8999,
+    image:
+      "https://images.unsplash.com/photo-1584947897558-4e06f5021a83?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1584947897558-4e06f5021a83?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584947897558-4e06f5021a83?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584947897558-4e06f5021a83?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "10-piece stainless steel cookware set with non-stick coating and ergonomic handles. Professional quality for home chefs!",
+    category: "kitchen",
+    isOnSale: true,
+    stock: 10,
+    sku: "OFFER-008-COK",
+    tags: ["cookware", "kitchen", "cooking"],
+    rating: 4.9,
+    reviewCount: 41,
+  },
+  {
+    id: "offer-9",
+    name: "Bluetooth Portable Speaker",
+    price: 1499,
+    originalPrice: 2499,
+    image:
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Waterproof Bluetooth speaker with 20-hour battery life, deep bass, and 360° sound. Perfect for outdoor adventures!",
+    category: "electronics",
+    isOnSale: true,
+    featured: true,
+    stock: 25,
+    sku: "OFFER-009-SPK",
+    tags: ["speaker", "bluetooth", "audio"],
+    rating: 4.6,
+    reviewCount: 59,
+  },
+  {
+    id: "offer-10",
+    name: "Memory Foam Mattress",
+    price: 14999,
+    originalPrice: 24999,
+    image:
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Premium queen-size memory foam mattress with cooling gel technology and pressure relief. Experience better sleep at a great price!",
+    category: "furniture",
+    isOnSale: true,
+    stock: 7,
+    sku: "OFFER-010-MAT",
+    tags: ["mattress", "bedroom", "furniture"],
+    rating: 4.8,
+    reviewCount: 73,
+  },
+  {
+    id: "offer-11",
+    name: "Digital Camera Bundle",
+    price: 29999,
+    originalPrice: 44999,
+    image:
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Professional DSLR camera with 24MP sensor, 4K video, two lenses, carrying case, and accessories. Perfect for photography enthusiasts!",
+    category: "electronics",
+    isOnSale: true,
+    stock: 5,
+    sku: "OFFER-011-CAM",
+    tags: ["camera", "photography", "digital"],
+    rating: 4.9,
+    reviewCount: 37,
+  },
+  {
+    id: "offer-12",
+    name: "Luxury Watch",
+    price: 9999,
+    originalPrice: 15999,
+    image:
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Elegant stainless steel watch with automatic movement, sapphire crystal, and genuine leather strap. A timeless accessory at a special price!",
+    category: "accessories",
+    isOnSale: true,
+    featured: true,
+    stock: 9,
+    sku: "OFFER-012-WCH",
+    tags: ["watch", "luxury", "accessories"],
+    rating: 4.7,
+    reviewCount: 48,
+  },
+]
+

@@ -1,0 +1,65 @@
+{
+  "name": "ShapNa - Create your Online Shop in 1 minute",
+  "short_name": "ShapNa",
+  "description": "Create and launch your own online shop in just 1 minute with ShapNa",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "orientation": "portrait",
+  "scope": "/",
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "Shop",
+      "url": "/shop",
+      "icons": [
+        {
+          "src": "/icons/shop-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Categories",
+      "url": "/categories",
+      "icons": [
+        {
+          "src": "/icons/categories-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "categories": ["shopping", "lifestyle"],
+  "screenshots": [
+    {
+      "src": "/screenshots/home.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    },
+    {
+      "src": "/screenshots/product.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    }
+  ],
+  "android_package_name": "com.shapna.app",
+  "prefer_related_applications": false,
+  "iarc_rating_id": "",
+  "permissions": ["notifications", "geolocation", "camera", "microphone"]
+}
+

@@ -1,0 +1,260 @@
+import type { Product } from "@/lib/product-data"
+
+// New arrivals products
+export const newArrivalsProducts: Product[] = [
+  {
+    id: "new-1",
+    name: "Smart Fitness Watch",
+    price: 3499,
+    image:
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Advanced fitness tracker with heart rate monitoring, sleep tracking, and 7-day battery life. Water-resistant and compatible with iOS and Android.",
+    category: "electronics",
+    isNew: true,
+    featured: true,
+    stock: 20,
+    sku: "NEW-001-FTW",
+    tags: ["fitness", "smartwatch", "electronics"],
+    rating: 4.8,
+    reviewCount: 12,
+  },
+  {
+    id: "new-2",
+    name: "Wireless Noise-Cancelling Earbuds",
+    price: 2999,
+    image:
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Premium wireless earbuds with active noise cancellation, touch controls, and 24-hour battery life with charging case.",
+    category: "electronics",
+    isNew: true,
+    stock: 15,
+    sku: "NEW-002-EBD",
+    tags: ["audio", "wireless", "earbuds"],
+    rating: 4.7,
+    reviewCount: 8,
+  },
+  {
+    id: "new-3",
+    name: "Minimalist Leather Wallet",
+    price: 1299,
+    image:
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Slim, handcrafted leather wallet with RFID protection. Features 6 card slots and a bill compartment in a sleek design.",
+    category: "accessories",
+    isNew: true,
+    featured: true,
+    stock: 25,
+    sku: "NEW-003-WLT",
+    tags: ["wallet", "leather", "minimalist"],
+    rating: 4.9,
+    reviewCount: 15,
+  },
+  {
+    id: "new-4",
+    name: "Eco-Friendly Water Bottle",
+    price: 899,
+    image:
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Double-walled stainless steel water bottle that keeps drinks cold for 24 hours or hot for 12 hours. BPA-free and eco-friendly.",
+    category: "accessories",
+    isNew: true,
+    stock: 30,
+    sku: "NEW-004-BTL",
+    tags: ["bottle", "eco-friendly", "hydration"],
+    rating: 4.6,
+    reviewCount: 9,
+  },
+  {
+    id: "new-5",
+    name: "Smart Home Security Camera",
+    price: 2499,
+    image: "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "HD security camera with motion detection, night vision, and two-way audio. Connect to your smartphone for real-time monitoring.",
+    category: "electronics",
+    isNew: true,
+    stock: 18,
+    sku: "NEW-005-CAM",
+    tags: ["security", "smart home", "camera"],
+    rating: 4.5,
+    reviewCount: 11,
+  },
+  {
+    id: "new-6",
+    name: "Organic Skincare Set",
+    price: 1999,
+    image:
+      "https://images.unsplash.com/photo-1570194065650-d99fb4cb6888?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1570194065650-d99fb4cb6888?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1570194065650-d99fb4cb6888?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1570194065650-d99fb4cb6888?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Complete skincare set with cleanser, toner, serum, and moisturizer. Made with organic ingredients and suitable for all skin types.",
+    category: "beauty",
+    isNew: true,
+    featured: true,
+    stock: 22,
+    sku: "NEW-006-SKN",
+    tags: ["skincare", "organic", "beauty"],
+    rating: 4.8,
+    reviewCount: 14,
+  },
+  {
+    id: "new-7",
+    name: "Adjustable Standing Desk",
+    price: 4999,
+    image:
+      "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Electric standing desk with height adjustment, memory settings, and cable management. Promotes better posture and productivity.",
+    category: "furniture",
+    isNew: true,
+    stock: 10,
+    sku: "NEW-007-DSK",
+    tags: ["desk", "furniture", "ergonomic"],
+    rating: 4.7,
+    reviewCount: 6,
+  },
+  {
+    id: "new-8",
+    name: "Portable Bluetooth Speaker",
+    price: 1799,
+    image:
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1589003077984-894e133dabab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Waterproof Bluetooth speaker with 360° sound, 20-hour battery life, and built-in microphone for calls. Perfect for outdoor adventures.",
+    category: "electronics",
+    isNew: true,
+    stock: 28,
+    sku: "NEW-008-SPK",
+    tags: ["speaker", "bluetooth", "audio"],
+    rating: 4.6,
+    reviewCount: 19,
+  },
+  {
+    id: "new-9",
+    name: "Ceramic Plant Pot Set",
+    price: 1299,
+    image:
+      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description: "Set of 3 minimalist ceramic plant pots in different sizes. Perfect for indoor plants and home decor.",
+    category: "home-decor",
+    isNew: true,
+    featured: true,
+    stock: 35,
+    sku: "NEW-009-POT",
+    tags: ["plant pot", "ceramic", "home decor"],
+    rating: 4.9,
+    reviewCount: 22,
+  },
+  {
+    id: "new-10",
+    name: "Bamboo Cutlery Set",
+    price: 799,
+    image:
+      "https://images.unsplash.com/photo-1584346133934-a3044f2a8a8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1584346133934-a3044f2a8a8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584346133934-a3044f2a8a8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584346133934-a3044f2a8a8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Eco-friendly bamboo cutlery set with fork, knife, spoon, and carrying case. Reusable and biodegradable alternative to plastic utensils.",
+    category: "kitchen",
+    isNew: true,
+    stock: 40,
+    sku: "NEW-010-CUT",
+    tags: ["cutlery", "eco-friendly", "bamboo"],
+    rating: 4.7,
+    reviewCount: 16,
+  },
+  {
+    id: "new-11",
+    name: "Yoga Mat with Alignment Lines",
+    price: 1499,
+    image:
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Non-slip yoga mat with alignment lines for proper positioning. Made from eco-friendly TPE material with extra cushioning for joints.",
+    category: "sports",
+    isNew: true,
+    stock: 25,
+    sku: "NEW-011-YOG",
+    tags: ["yoga", "fitness", "exercise"],
+    rating: 4.8,
+    reviewCount: 13,
+  },
+  {
+    id: "new-12",
+    name: "Smart LED Light Bulbs (4-Pack)",
+    price: 1999,
+    image: "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    ],
+    description:
+      "Wi-Fi enabled LED bulbs with millions of colors, dimming capabilities, and voice control compatibility. Control via smartphone app.",
+    category: "smart home",
+    isNew: true,
+    featured: true,
+    stock: 30,
+    sku: "NEW-012-LED",
+    tags: ["smart home", "lighting", "LED"],
+    rating: 4.6,
+    reviewCount: 18,
+  },
+]
+

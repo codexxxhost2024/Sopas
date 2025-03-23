@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ShapNa - Offline</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      background-color: white;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #e53e3e;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #4a5568;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .icon {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+    .button {
+      background-color: #e53e3e;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background-color: #c53030;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📶</div>
+    <h1>You're Offline</h1>
+    <p>It looks like you've lost your internet connection. ShapNa requires an internet connection to work properly.</p>
+    <p>Some features may be available offline if you've visited them before.</p>
+    <button class="button" onclick="window.location.reload()">Try Again</button>
+  </div>
+</body>
+</html>
+
